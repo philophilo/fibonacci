@@ -6,11 +6,14 @@ def fib(n):
 def printer(n):
     seq = []
     if isinstance(n, int):
-        for i in range(n):
-            seq.append(fib(i))
-        return seq
+        if n >= 1:
+            for i in range(n):
+                seq.append(fib(i))
+            return seq
+        else:
+            return "integer must be greater than 1"
     else:
         return "please input integer"
 
-#if __name__ == "__main__":
-#    printer(3)
+if __name__ == "__main__":
+    printer(1)
