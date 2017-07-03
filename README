@@ -2,3 +2,7 @@
 
 Fibonacci function with test
     fib.py finonacci function 
+    fiTest.py fibinacci test functions
+    primeNumber sequence of prime numbers
+    complexity of primeNumbers O((n)^2)
+
