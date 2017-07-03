@@ -2,7 +2,7 @@ import math
 
 def primeNumbers(n):
     for x in range(2, int(math.sqrt(n) + 1)):
-        if x % x == 0:
+        if n % x == 0 or x == 3 or x < 2:
             return False
     return True
 
@@ -10,10 +10,8 @@ def printer(n):
     seq = []
 
     for i in range(0, n+1):
-        """if i == 2:
-            iseq.append(i)"""
-        if i != 3 or i < 2 :
-            if primeNumbers(i):
+        if primeNumbers(i):
+            if i != 3 or i <2:
                 seq.append(i)
     print seq
 
